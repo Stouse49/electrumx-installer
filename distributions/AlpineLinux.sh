@@ -18,7 +18,7 @@ function add_user {
 	id -u electrumx || _error "Could not add user account" 1
 }
 
-function install_python37 {
+function install_python38 {
 	_error "Please install Python 3.7 manually"
 }
 

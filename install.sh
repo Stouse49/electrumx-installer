@@ -149,7 +149,7 @@ fi
 
 python=""
 
-for _python in python3 python3.7; do
+for _python in python3 python3.8; do
 	if which $_python; then
 	python=$_python
 	fi
@@ -172,8 +172,8 @@ if [ $UPDATE_ONLY == 0 ] || [ $UPDATE_PYTHON == 1 ]; then
 		_info "Python 3.7 is already installed."
 	else
 		_status "Installing Python 3.7"
-		python=python3.7
-		install_python37
+		python=python3.8
+		install_python38
 		if [[ $($python -V 2>&1) == *"Python 3.7"* ]] > /dev/null 2>&1; then
 			_info "Python 3.7 successfully installed"
 		else
